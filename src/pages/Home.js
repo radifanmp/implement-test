@@ -62,6 +62,25 @@ class Home extends Component {
 
                     </Modal>
 
+                    {/* Modal Update Data */}
+                    <Modal show={this.state.show} onHide={() => this.handleShow(false)} animation={false}>
+
+                        <Modal.Header closeButton>
+                            <Modal.Title>Add Data</Modal.Title>
+                        </Modal.Header>
+                        
+                        <Modal.Body>
+                            <form>
+                                <input type="text" style={{width: "100%", marginBottom: 10}} placeholder="Title"></input>
+
+                                <Button variant="primary" style={{marginLeft: "73%"}}>
+                                Save Changes
+                                </Button>
+                            </form>
+                        </Modal.Body>
+
+                    </Modal>
+
                 </header>
             </div>
         )
